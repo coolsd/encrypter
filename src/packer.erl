@@ -153,6 +153,9 @@ is_b_atom(<<"test_it_out">>) -> true;
 is_b_atom(<<"dump_channels">>) -> true;
 is_b_atom(<<"f">>) -> true;
 is_b_atom(<<"test">>) -> true;
+is_b_atom(<<"miner_overview">>) -> true;
+is_b_atom(<<"miner_detail">>) -> true;
+is_b_atom(<<"worker_detail">>) -> true;
 is_b_atom(X) when is_binary(X) -> 
     io:fwrite("FAILED TO UNPACK ATOM "),
     io:fwrite(X),
